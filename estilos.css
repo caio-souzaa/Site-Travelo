@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2? family= Justo & family= Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400; 1.500;1.700;1.900 & família= Sarala:wght@400;700 & display=swap');
+
+*{
+    margin: 0px ;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+header{
+    height: 71px;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(228, 228, 228);
+    overflow: hidden;
+    /* FlexBox */
+    display: flex;
+    /* Alinha ao meio verticalmente */
+    align-items: center;
+    /* Vai colocar os espaços entre os elementos */
+    justify-content: space-between;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+    padding-right: 15px;
+}
+/* Ao passar o mouse por cima, aparece um anderline por baixo da palavra */
+header a:hover{
+    text-decoration: underline;
+    /* Da um espaço de 5 px entre a palavra e o underline */
+    text-underline-offset: calc(5px);
+}
+
+
+.paginaAtiva{
+    text-decoration: underline;
+}
+
+.inicio{
+    width: 100%;
+    padding: 20px;
+ 
+}
+
+.inicio ul{
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    /* Quebrar a linha quando não caber mais imagem */
+    flex-wrap: wrap;
+    justify-content: center
+}
+
+.inicio ul img{
+    border-radius: 15px;
+    transform: scale(0.9);
+}
+
+.inicio ul img:hover{
+    transform: scale(1);
+    transition: 0.4s;
+    box-shadow: 0px 0px 10px rgb(34, 34, 34);
+}
+
+.inicio h1{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.rodape{
+
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 5px;
+    font-size: 14px;
+}
+
+/* PAGINA SOBRE */
+
+.sobre{
+    width: 100%;
+    padding: 20px 50px;
+
+    display: flex;
+    /* espaço entre os itens */
+    gap: 20px;
+}
+
+.sobre div p{
+    text-indent: 15px;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+
+/* PAGINA BLOG */
+.blog{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.blog iframe{
+    margin: 10px;
+    box-shadow: 2px 2px 10px rgb(134, 134, 134);
+    border-radius: 10px;
+    border: 10px groove rgb(255, 153, 0);
+    transform: scale(1)
+}
+
+.blog iframe:hover{
+    transform: scale(0.9);
+    transition: 0.5s;
+    border: 10px groove rgb(133, 80, 0);
+    opacity: calc(0.8);
+}
+
+/* PAGINA CONTATO */
+
+.bodyContato{
+    background-color: rgb(219, 219, 219);
+}
+.formCenter{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.mContato{
+    width: 38%;
+    margin-bottom: 20px;
+    
+    background-image: url(/imagens/fundo.jpg);
+    display: flex;
+    box-sizing: border-box;
+    justify-content: right;
+    display: block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 15px;
+    
+}
+
+.pContato{
+    padding: 20px;
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+}
+
+.textContato{
+    margin-left: 25px;
+    width: 300px;
+    margin-bottom: 10px;
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 50%;
+}
+
+.numberContato{
+    margin-left: 25px;
+    /* width: 300px; */
+    margin-bottom: 10px;
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 50%;
+}
+
+.emailContato{
+    margin-left: 25px;
+    margin-bottom: 10px;
+    width: 300px;
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 50%;
+}
+
+.selectContato{
+    display: block;
+    margin-left: 25px;
+    border-radius: 8px;
+    padding: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 25%;
+}
+
+.selectCenter{
+    display: flex;
+    justify-content: center;
+}
+
+.botaoContato{
+    height: 30px;
+    margin: 20px;
+    padding: 6px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(8, 209, 8);
+    color: white;
+    transform: scale(0.9);
+    width: 20%;
+}
+
+.botaoContato:hover{
+    opacity: 0.8;
+    box-shadow: 0px 0px 2px rgb(65, 65, 65);
+    transform: scale(1);
+    width: 20%;
+}
